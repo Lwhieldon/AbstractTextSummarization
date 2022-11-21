@@ -63,14 +63,6 @@ To support the submission of this project to UMBC's Data Science Program, class 
 ```
 AbstractTextSummarization
 |__ notebooks-utils-data
-|   |__pegasus-samsum
-|   |  |__config.json
-|   |  |__pytorch_model.bin
-|   |  |__special_tokens_map.json
-|   |  |__spiece.model
-|   |  |__tokenizer_config.json
-|   |  |__tokenizer.json
-|   |  |__training_args.bin
 |   |__ProjectCode.ipynb
 |__ presentation
 |   |__ Presentation.pdf
