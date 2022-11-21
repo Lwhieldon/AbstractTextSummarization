@@ -1,29 +1,79 @@
 
 
 <p align="center">
-<img src="" height=400 />
+<img src="notebooks+utils+data\TextSummarizationImg.jpg" height=200 />
 </p>
 
-# Abstract Text Summarization Using Transformers
+# <b>Abstract Text Summarization Using Transformers</b>
 Hugging Face Transformers to build abstract text summarization NLP Model
 <br>
 <br>
-## Overview and Background
+## <b>Overview and Background</b>
+<br>
+<br>
+<p align="center">
+<img src="notebooks+utils+data\pegasus-samsum\AbstractiveTextSummarization.png" height=200 />
+</p>
 
-## Sample Inference
-## YouTube Presentation
 
-To support the submission of this project to UMBC's Data Science Program, class DATA690: Applied AI, here is the youtube containing presentation. 
 
-## Data Details
 
-- 
-## Table of Contents
+## <b>Data & Model Details</b>
+<br>
+<p align="center">
+<img src="notebooks+utils+data\pegasus-samsum\SAMsum_sample.png" height=300 />
+</p>
+
+### <b>Pegasus-Samsum Model</b>
+
+This model is a fine-tuned version of [google/pegasus-cnn_dailymail](https://huggingface.co/google/pegasus-cnn_dailymail) on the samsum dataset ().
+It achieves the following results on the evaluation set:
+- Loss: 1.4919
+### <b>Training hyperparameters</b>
+
+The following hyperparameters were used during training:
+- learning_rate: 5e-05
+- train_batch_size: 1
+- eval_batch_size: 1
+- seed: 42
+- gradient_accumulation_steps: 16
+- total_train_batch_size: 16
+- optimizer: Adam with betas=(0.9,0.999) and epsilon=1e-08
+- lr_scheduler_type: linear
+- lr_scheduler_warmup_steps: 500
+- num_epochs: 1
+### <b>Training results</b>
+
+| Training Loss | Epoch | Step | Validation Loss |
+|:-------------:|:-----:|:----:|:---------------:|
+| 1.6776        | 0.54  | 500  | 1.4919          |
+
+<br>
+<br>
+
+
+## <b>YouTube Presentation</b>
+
+To support the submission of this project to UMBC's Data Science Program, class DATA606: Capstone in Data Science, here is the youtube containing presentation. 
+
+<br>
+<br>
+
+## <b>Table of Contents</b>
 ```
-BibObjectDetection
+AbstractTextSummarization
 |__ notebooks-utils-data
+|   |__pegasus-samsum
+|   |  |__config.json
+|   |  |__pytorch_model.bin
+|   |  |__special_tokens_map.json
+|   |  |__spiece.model
+|   |  |__tokenizer_config.json
+|   |  |__tokenizer.json
+|   |  |__training_args.bin
+|   |__ProjectCode.ipynb
 |__ presentation
-|   |__ RaceBibDetection_Presentation.pdf
+|   |__ Presentation.pdf
 README.md
 ```
 
@@ -62,9 +112,8 @@ Contributors : <a href=https://github.com/Lwhieldon>Lee Whieldon</a>
 <pre>
 Languages    : Python
 Tools/IDE    : Google Colab, Visual Studio Code
-Libraries    : 
+Libraries    : Transformers 4.22.2, Pytorch 1.12.1+gpu, Datasets 2.4.0, Tokenizers 0.12.1
 </pre>
-
 <pre>
 Assignment Submitted     : December 2022
 </pre>
