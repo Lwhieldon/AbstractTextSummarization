@@ -75,14 +75,12 @@ To support the submission of this project to UMBC's Data Science Program, class 
 <br>
 
 ## <b>Table of Contents</b>
-```
-AbstractTextSummarization
-|__ notebooks-utils-data
-|   |__ProjectCode.ipynb
-|__ presentation
-|   |__ Presentation.pdf
-README.md
-```
+This assignment contains the following areas:
+
+<ol>
+  <li><a href='https://github.com/Lwhieldon/AbstractTextSummarization/blob/main/notebooks%2Butils%2Bdata/ProjectCode.ipynb'>Summary and Report</a>: Jupyter Notebook including a detailed abstract on problems in assignment, code relevant to project, and visualizations supporting the completion of the project. </li>
+  <li><a href='https://github.com/Lwhieldon/AbstractTextSummarization/blob/main/presentation/Final%20Presentation%20-%20Lee%20Whieldon%20Fall%202022%20DATA606.pdf'>Presentation:</a> Presentation Conducted for this project</li>
+</ol>
 
 ## References
 - M. Omar, S. Choi, D. Nyang, and D. Mohaisen, “Robust natural language processing: Recent advances, challenges, and future directions,” ArXiv Prepr. ArXiv220100768, 2022.
