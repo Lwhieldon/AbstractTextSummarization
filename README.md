@@ -79,7 +79,7 @@ This assignment contains the following areas:
 
 <ol>
 <li><a href='https://github.com/Lwhieldon/AbstractTextSummarization/blob/main/notebooks%2Butils%2Bdata/ProjectCode.ipynb'>Summary and Report</a>: Jupyter Notebook including a detailed abstract on problems in assignment, code relevant to project, and visualizations supporting the completion of the project. </li>
-<li><a href='https://github.com/Lwhieldon/AbstractTextSummarization/blob/main/presentation/Final%20Presentation%20-%20Lee%20Whieldon%20Fall%202022%20DATA606.pdf'>Dataset:</a> Zipped copy of the dataset should the reader like to export for their analysis purposes.</li>
+<li><a href='https://github.com/Lwhieldon/AbstractTextSummarization/blob/main/notebooks%2Butils%2Bdata/samsum%20dataset.zip'>Dataset:</a> Zipped copy of the dataset should the reader like to export for their analysis purposes.</li>
 <li><a href='https://github.com/Lwhieldon/AbstractTextSummarization/blob/main/presentation/Final%20Presentation%20-%20Lee%20Whieldon%20Fall%202022%20DATA606.pdf'>Presentation:</a> Presentation Conducted for this project</li>
 </ol>
 
