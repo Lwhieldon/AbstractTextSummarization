@@ -15,15 +15,30 @@ Hugging Face Transformers to build abstract text summarization NLP Model
 <img src="notebooks+utils+data\pegasus-samsum\AbstractiveTextSummarization.png" height=200 />
 </p>
 
+Text summarization is a complex task for recurrent neural networks, particularly in neural language models. Despite it's complexity, text summarization offers the prospect for domain experts to significantly increase productivity and is used in enterprise-level capacities today to condense common domain knowledge, summarize complex corpus of text like contracts, and automatically generate content for use cases in social media, advertising, and more. In this project, I explore the use of large language models in the recurrent neural network framework using encoder-decoder transformers from scratch to condense dialogues between several people into a crisp summary, demonstrating abstract text summarization. Applications of this exercise are endless, but could be especially beneficial for summarizing long transcripts from meetings and so on.
 
-
+Let's first look at the dataset we will use for training: Samsung transcript data. We will then go into the scoring parameters and demonstrate how we train the model. Lastly, we will then showcase our model's inference and discuss opportunities for future work and study use cases.
 
 ## <b>Data & Model Details</b>
 <br>
 <p align="center">
 <img src="notebooks+utils+data\pegasus-samsum\SAMsum_sample.png" height=300 />
 </p>
+For our application, we'll use the SAMsum dataset, developed by Samsung, which consists of a collection of dialogues along with brief summaries. In an enterprise setting, these dialogues might represent the interactions between a customer and a support center personnel or a transcript representing individuals taking part in a meeting, so generating accurate summaries can help improve customer service, cut down on note taking, and detect common patterns among customer requests or meeting themes.
 
+For this project, we leverage 🤗 Hugging Face's SAMsum dataset by leveraging the load_dataset library. This is beneficial as Hugging Face has already performed the task of cleansing and organizing the SAMsum dataset for us.
+
+The dataset has 3 features:
+ - Dialogue, which contains the dialogue text,
+ - Summary containing the synopsis of the dialogue, and
+ - id to uniquely identify each record.
+ 
+ 🤗 Hugging Face's dataset is made of 16,369 conversations distributed uniformly into 4 groups based on the number of utterances in conversations: 3-6, 7-12, 13-18, and 19-30. Each utterance contains the names of the speaker. Note also the data is split into the following subsets:
+
+Data Splits
+- train: 14,732 records
+- validation: 818 records
+- test: 819 records  
 ### <b>Pegasus-Samsum Model</b>
 
 This model is a fine-tuned version of [google/pegasus-cnn_dailymail](https://huggingface.co/google/pegasus-cnn_dailymail) on the samsum dataset ().
