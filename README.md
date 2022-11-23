@@ -12,7 +12,7 @@ Hugging Face Transformers to build abstract text summarization NLP Model
 <br>
 <br>
 <p align="center">
-<img src="notebooks+utils+data\pegasus-samsum\AbstractiveTextSummarization.png" height=200 />
+<img src="https://github.com/Lwhieldon/AbstractTextSummarization/blob/main/notebooks+utils+data/AbstractiveTextSummarization.png?raw=true" height=200 />
 </p>
 
 Text summarization is a complex task for recurrent neural networks, particularly in neural language models. Despite it's complexity, text summarization offers the prospect for domain experts to significantly increase productivity and is used in enterprise-level capacities today to condense common domain knowledge, summarize complex corpus of text like contracts, and automatically generate content for use cases in social media, advertising, and more. In this project, I explore the use of large language models in the recurrent neural network framework using encoder-decoder transformers from scratch to condense dialogues between several people into a crisp summary, demonstrating abstract text summarization. Applications of this exercise are endless, but could be especially beneficial for summarizing long transcripts from meetings and so on.
@@ -22,7 +22,7 @@ Let's first look at the dataset we will use for training: Samsung transcript dat
 ## <b>Data & Model Details</b>
 <br>
 <p align="center">
-<img src="notebooks+utils+data\pegasus-samsum\SAMsum_sample.png" height=300 />
+<img src="https://github.com/Lwhieldon/AbstractTextSummarization/blob/main/notebooks+utils+data/SAMsum_sample.png?raw=true" height=300 />
 </p>
 For our application, we'll use the SAMsum dataset, developed by Samsung, which consists of a collection of dialogues along with brief summaries. In an enterprise setting, these dialogues might represent the interactions between a customer and a support center personnel or a transcript representing individuals taking part in a meeting, so generating accurate summaries can help improve customer service, cut down on note taking, and detect common patterns among customer requests or meeting themes.
 
