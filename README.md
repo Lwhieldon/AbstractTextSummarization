@@ -71,7 +71,7 @@ The following hyperparameters were used during training:
 
 To support the submission of this project to UMBC's Data Science Program, class DATA606: Capstone in Data Science, here is the youtube containing presentation. 
 
-[![IMAGE ALT TEXT HERE](https://i9.ytimg.com/vi_webp/5-EG0UFlB5g/mq1.webp?sqp=CMSciZwG-oaymwEmCMACELQB8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGGUgVihKMA8=&rs=AOn4CLClokTQKk-tXCTQen8xDJSFgQlHHw)](https://youtu.be/5-EG0UFlB5g)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5-EG0UFlB5g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <br>
 <br>
